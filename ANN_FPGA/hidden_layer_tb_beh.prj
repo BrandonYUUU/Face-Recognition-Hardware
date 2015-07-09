@@ -1,0 +1,8 @@
+vhdl work "ipcore_dir/mul_hid.vhd"
+vhdl work "ipcore_dir/acticv_mul.vhd"
+vhdl work "shifter.vhd"
+vhdl work "neuron_hid.vhd"
+vhdl work "custom_pkg.vhd"
+vhdl work "activation_hid_count.vhd"
+vhdl work "hidden_layer.vhd"
+vhdl work "hidden_layer_tb.vhd"

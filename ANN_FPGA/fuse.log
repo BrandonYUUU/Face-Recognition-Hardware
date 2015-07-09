@@ -1,0 +1,89 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "secureip" -o "C:/Users/saidwivedi/OneDrive/Project/NIT/ANN_Final/controller_tb_isim_beh.exe" -prj "C:/Users/saidwivedi/OneDrive/Project/NIT/ANN_Final/controller_tb_beh.prj" "work.controller_tb" 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 12
+Turning on mult-threading, number of parallel sub-compilation jobs: 24 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/saidwivedi/OneDrive/Project/NIT/ANN_Final/ipcore_dir/mul_hid.vhd" into library work
+Parsing VHDL file "C:/Users/saidwivedi/OneDrive/Project/NIT/ANN_Final/ipcore_dir/acticv_mul.vhd" into library work
+Parsing VHDL file "C:/Users/saidwivedi/OneDrive/Project/NIT/ANN_Final/ipcore_dir/test_image.vhd" into library work
+Parsing VHDL file "C:/Users/saidwivedi/OneDrive/Project/NIT/ANN_Final/ipcore_dir/weight_hid.vhd" into library work
+Parsing VHDL file "C:/Users/saidwivedi/OneDrive/Project/NIT/ANN_Final/ipcore_dir/weight_out.vhd" into library work
+Parsing VHDL file "C:/Users/saidwivedi/OneDrive/Project/NIT/ANN_Final/shifter.vhd" into library work
+Parsing VHDL file "C:/Users/saidwivedi/OneDrive/Project/NIT/ANN_Final/neuron_hid.vhd" into library work
+Parsing VHDL file "C:/Users/saidwivedi/OneDrive/Project/NIT/ANN_Final/custom_pkg.vhd" into library work
+Parsing VHDL file "C:/Users/saidwivedi/OneDrive/Project/NIT/ANN_Final/activation_hid_count.vhd" into library work
+Parsing VHDL file "C:/Users/saidwivedi/OneDrive/Project/NIT/ANN_Final/prediction.vhd" into library work
+Parsing VHDL file "C:/Users/saidwivedi/OneDrive/Project/NIT/ANN_Final/hidden_layer.vhd" into library work
+Parsing VHDL file "C:/Users/saidwivedi/OneDrive/Project/NIT/ANN_Final/controller.vhd" into library work
+Parsing VHDL file "C:/Users/saidwivedi/OneDrive/Project/NIT/ANN_Final/controller_tb.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package custom_pkg
+Compiling package numeric_std
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling package textio
+Compiling package std_logic_textio
+Compiling architecture output_stage_behavioral of entity BLK_MEM_GEN_V7_3_output_stage [\BLK_MEM_GEN_V7_3_output_stage("...]
+Compiling architecture softecc_output_reg_stage_behavioral of entity BLK_MEM_GEN_V7_3_softecc_output_reg_stage [\BLK_MEM_GEN_V7_3_softecc_output...]
+Compiling architecture mem_module_behavioral of entity BLK_MEM_GEN_V7_3_mem_module [\BLK_MEM_GEN_V7_3_mem_module("bl...]
+Compiling architecture behavioral of entity BLK_MEM_GEN_V7_3 [\BLK_MEM_GEN_V7_3("blk_mem_gen_v...]
+Compiling architecture test_image_a of entity test_image [test_image_default]
+Compiling package std_logic_signed
+Compiling package bip_utils_pkg_v2_0
+Compiling package bip_usecase_utils_pkg_v2_0
+Compiling package xbip_pipe_v2_0_comp
+Compiling package xbip_accum_v2_0_pkg
+Compiling package mult_gen_pkg_v11_0
+Compiling package xbip_multaccum_pkg_v2_0
+Compiling architecture behavioral of entity xbip_pipe_v2_0 [\xbip_pipe_v2_0(0,1,0,0,1,0,0,"0...]
+Compiling architecture behavioral of entity xbip_multaccum_v2_0 [\xbip_multaccum_v2_0(0,"artix7",...]
+Compiling architecture mul_hid_a of entity mul_hid [mul_hid_default]
+Compiling architecture behavioral of entity neuron_hid [neuron_hid_default]
+Compiling architecture behavioral of entity activation_hid_count [activation_hid_count_default]
+Compiling package xbip_pipe_v2_0_xst_comp
+Compiling package bip_dsp48_macro_pkg_v2_1
+Compiling architecture behavioral of entity xbip_pipe_v2_0 [\xbip_pipe_v2_0(0,1,0,0,0,0,0,"0...]
+Compiling architecture behavioral of entity xbip_pipe_v2_0_xst [\xbip_pipe_v2_0_xst(0,1,0,0,0,0,...]
+Compiling architecture behavioral of entity xbip_pipe_v2_0 [\xbip_pipe_v2_0(1,1,0,0,0,0,0,"0...]
+Compiling architecture behavioral of entity xbip_pipe_v2_0_xst [\xbip_pipe_v2_0_xst(1,1,0,0,0,0,...]
+Compiling architecture behavioral of entity xbip_pipe_v2_0 [\xbip_pipe_v2_0(0,1,0,0,0,0,0,"0...]
+Compiling architecture behavioral of entity xbip_pipe_v2_0_xst [\xbip_pipe_v2_0_xst(0,1,0,0,0,0,...]
+Compiling architecture behavioral of entity xbip_pipe_v2_0 [\xbip_pipe_v2_0(1,1,0,0,0,0,0,"0...]
+Compiling architecture behavioral of entity xbip_pipe_v2_0_xst [\xbip_pipe_v2_0_xst(1,1,0,0,0,0,...]
+Compiling architecture behavioral of entity xbip_pipe_v2_0 [\xbip_pipe_v2_0(0,1,0,0,0,0,0,"0...]
+Compiling architecture behavioral of entity xbip_pipe_v2_0_xst [\xbip_pipe_v2_0_xst(0,1,0,0,0,0,...]
+Compiling architecture behavioral of entity xbip_pipe_v2_0 [\xbip_pipe_v2_0(1,1,0,0,0,0,0,"0...]
+Compiling architecture behavioral of entity xbip_pipe_v2_0_xst [\xbip_pipe_v2_0_xst(1,1,0,0,0,0,...]
+Compiling architecture behavioral of entity xbip_pipe_v2_0 [\xbip_pipe_v2_0(0,1,0,0,0,0,0,"0...]
+Compiling architecture behavioral of entity xbip_pipe_v2_0_xst [\xbip_pipe_v2_0_xst(0,1,0,0,0,0,...]
+Compiling architecture behavioral of entity xbip_pipe_v2_0 [\xbip_pipe_v2_0(0,1,0,0,0,0,0,"0...]
+Compiling architecture behavioral of entity xbip_pipe_v2_0_xst [\xbip_pipe_v2_0_xst(0,1,0,0,0,0,...]
+Compiling architecture behavioral of entity xbip_pipe_v2_0 [\xbip_pipe_v2_0(0,1,0,0,0,0,0,"0...]
+Compiling architecture behavioral of entity xbip_pipe_v2_0_xst [\xbip_pipe_v2_0_xst(0,1,0,0,0,0,...]
+Compiling architecture behavioral of entity xbip_pipe_v2_0 [\xbip_pipe_v2_0(0,1,0,0,0,0,0,"0...]
+Compiling architecture behavioral of entity xbip_pipe_v2_0_xst [\xbip_pipe_v2_0_xst(0,1,0,0,0,0,...]
+Compiling architecture behavioral of entity xbip_dsp48_macro_v2_1 [\xbip_dsp48_macro_v2_1(0,0,"arti...]
+Compiling architecture acticv_mul_a of entity acticv_mul [acticv_mul_default]
+Compiling architecture behavioral of entity shifter [shifter_default]
+Compiling architecture behavioral of entity hidden_layer [\hidden_layer(40)\]
+Compiling architecture output_stage_behavioral of entity BLK_MEM_GEN_V7_3_output_stage [\BLK_MEM_GEN_V7_3_output_stage("...]
+Compiling architecture softecc_output_reg_stage_behavioral of entity BLK_MEM_GEN_V7_3_softecc_output_reg_stage [\BLK_MEM_GEN_V7_3_softecc_output...]
+Compiling architecture mem_module_behavioral of entity BLK_MEM_GEN_V7_3_mem_module [\BLK_MEM_GEN_V7_3_mem_module("bl...]
+Compiling architecture behavioral of entity BLK_MEM_GEN_V7_3 [\BLK_MEM_GEN_V7_3("blk_mem_gen_v...]
+Compiling architecture weight_hid_a of entity weight_hid [weight_hid_default]
+Compiling architecture output_stage_behavioral of entity BLK_MEM_GEN_V7_3_output_stage [\BLK_MEM_GEN_V7_3_output_stage("...]
+Compiling architecture softecc_output_reg_stage_behavioral of entity BLK_MEM_GEN_V7_3_softecc_output_reg_stage [\BLK_MEM_GEN_V7_3_softecc_output...]
+Compiling architecture mem_module_behavioral of entity BLK_MEM_GEN_V7_3_mem_module [\BLK_MEM_GEN_V7_3_mem_module("bl...]
+Compiling architecture behavioral of entity BLK_MEM_GEN_V7_3 [\BLK_MEM_GEN_V7_3("blk_mem_gen_v...]
+Compiling architecture weight_out_a of entity weight_out [weight_out_default]
+Compiling architecture behavioral of entity prediction [prediction_default]
+Compiling architecture behavioral of entity controller [controller_default]
+Compiling architecture behavior of entity controller_tb
+Time Resolution for simulation is 1ps.
+Compiled 110 VHDL Units
+Built simulation executable C:/Users/saidwivedi/OneDrive/Project/NIT/ANN_Final/controller_tb_isim_beh.exe
+Fuse Memory Usage: 59788 KB
+Fuse CPU Usage: 2140 ms

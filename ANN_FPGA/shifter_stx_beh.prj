@@ -1,0 +1,2 @@
+vhdl isim_temp "ipcore_dir/acticv_mul.vhd"
+vhdl isim_temp "shifter.vhd"

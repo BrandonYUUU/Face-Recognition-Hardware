@@ -1,0 +1,2 @@
+vhdl isim_temp "activation_hid_count.vhd"
+vhdl isim_temp "activation_hid_count_tb.vhd"

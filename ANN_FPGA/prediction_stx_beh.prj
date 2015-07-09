@@ -1,0 +1,2 @@
+vhdl isim_temp "custom_pkg.vhd"
+vhdl isim_temp "prediction.vhd"

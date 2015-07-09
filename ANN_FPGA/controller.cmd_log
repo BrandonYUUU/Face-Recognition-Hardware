@@ -1,0 +1,46 @@
+xst -intstyle ise -ifn "C:/Users/sai/OneDrive/Project/Code/ANN_proto_final/controller.xst" -ofn "C:/Users/sai/OneDrive/Project/Code/ANN_proto_final/controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc7a100t-csg324-1 controller.ngc controller.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o controller_map.ncd controller.ngd controller.pcf 
+par -w -intstyle ise -ol high -mt off controller_map.ncd controller.ncd controller.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml controller.twx controller.ncd -o controller.twr controller.pcf 
+xst -intstyle ise -ifn "C:/Users/sai/OneDrive/Project/Code/ANN_proto_final/controller.xst" -ofn "C:/Users/sai/OneDrive/Project/Code/ANN_proto_final/controller.syr" 
+xst -intstyle ise -ifn "C:/Users/sai/OneDrive/Project/Code/ANN_proto_final/controller.xst" -ofn "C:/Users/sai/OneDrive/Project/Code/ANN_proto_final/controller.syr" 
+xst -intstyle ise -ifn "C:/Users/sai/OneDrive/Project/Code/ANN_proto_final/controller.xst" -ofn "C:/Users/sai/OneDrive/Project/Code/ANN_proto_final/controller.syr" 
+xst -intstyle ise -ifn "C:/Users/sai/OneDrive/Project/Code/ANN_proto_final/controller.xst" -ofn "C:/Users/sai/OneDrive/Project/Code/ANN_proto_final/controller.syr" 
+xst -intstyle ise -ifn "C:/Users/sai/OneDrive/Project/Code/ANN_proto_final/controller.xst" -ofn "C:/Users/sai/OneDrive/Project/Code/ANN_proto_final/controller.syr" 
+xst -intstyle ise -ifn "C:/Users/sai/OneDrive/Project/Code/ANN_proto_final/controller.xst" -ofn "C:/Users/sai/OneDrive/Project/Code/ANN_proto_final/controller.syr" 
+xst -intstyle ise -ifn "C:/Users/sai/OneDrive/Project/Code/ANN_proto_final/controller.xst" -ofn "C:/Users/sai/OneDrive/Project/Code/ANN_proto_final/controller.syr" 
+xst -intstyle ise -ifn "C:/Users/sai/OneDrive/Project/Code/ANN_proto_final/controller.xst" -ofn "C:/Users/sai/OneDrive/Project/Code/ANN_proto_final/controller.syr" 
+xst -intstyle ise -ifn "C:/Users/sai/OneDrive/Project/Code/ANN_proto_final/controller.xst" -ofn "C:/Users/sai/OneDrive/Project/Code/ANN_proto_final/controller.syr" 
+xst -intstyle ise -ifn "C:/Users/sai/OneDrive/Project/Code/ANN_proto_final/controller.xst" -ofn "C:/Users/sai/OneDrive/Project/Code/ANN_proto_final/controller.syr" 
+xst -intstyle ise -ifn "C:/Users/saidwivedi/NIT Research/ANN_proto_final/controller.xst" -ofn "C:/Users/saidwivedi/NIT Research/ANN_proto_final/controller.syr" 
+xst -intstyle ise -ifn "C:/Users/saidwivedi/NIT Research/ANN_proto_final/controller.xst" -ofn "C:/Users/saidwivedi/NIT Research/ANN_proto_final/controller.syr" 
+xst -intstyle ise -ifn "C:/Users/saidwivedi/NIT Research/ANN_proto_final/controller.xst" -ofn "C:/Users/saidwivedi/NIT Research/ANN_proto_final/controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc7a100t-csg324-1 "controller.ngc" controller.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o controller_map.ncd controller.ngd controller.pcf 
+xst -intstyle ise -ifn "C:/Users/saidwivedi/NIT Research/ANN_proto_final/controller.xst" -ofn "C:/Users/saidwivedi/NIT Research/ANN_proto_final/controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc7a100t-csg324-1 "controller.ngc" controller.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o controller_map.ncd controller.ngd controller.pcf 
+xst -intstyle ise -ifn "C:/Users/saidwivedi/NIT Research/ANN_proto_final/controller.xst" -ofn "C:/Users/saidwivedi/NIT Research/ANN_proto_final/controller.syr" 
+xst -intstyle ise -ifn "C:/Users/saidwivedi/OneDrive/Project/NIT/ANN_proto_final/controller.xst" -ofn "C:/Users/saidwivedi/OneDrive/Project/NIT/ANN_proto_final/controller.syr" 
+xst -intstyle ise -ifn "C:/Users/saidwivedi/OneDrive/Project/NIT/ANN_proto_final/controller.xst" -ofn "C:/Users/saidwivedi/OneDrive/Project/NIT/ANN_proto_final/controller.syr" 
+xst -intstyle ise -ifn "C:/Users/saidwivedi/OneDrive/Project/NIT/ANN_proto_final/controller.xst" -ofn "C:/Users/saidwivedi/OneDrive/Project/NIT/ANN_proto_final/controller.syr" 
+xst -intstyle ise -ifn "C:/Users/saidwivedi/OneDrive/Project/NIT/ANN_proto_final/controller.xst" -ofn "C:/Users/saidwivedi/OneDrive/Project/NIT/ANN_proto_final/controller.syr" 
+xst -intstyle ise -ifn "C:/Users/saidwivedi/OneDrive/Project/NIT/ANN_proto_final/controller.xst" -ofn "C:/Users/saidwivedi/OneDrive/Project/NIT/ANN_proto_final/controller.syr" 
+netgen -intstyle ise -ar Structure -tm controller -w -dir netgen/synthesis -ofmt vhdl -sim controller.ngc controller_synthesis.vhd 
+xst -intstyle ise -ifn "C:/Users/saidwivedi/OneDrive/Project/NIT/ANN_proto_final/controller.xst" -ofn "C:/Users/saidwivedi/OneDrive/Project/NIT/ANN_proto_final/controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc7a100t-csg324-1 controller.ngc controller.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o controller_map.ncd controller.ngd controller.pcf 
+par -w -intstyle ise -ol high -mt off controller_map.ncd controller.ncd controller.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml controller.twx controller.ncd -o controller.twr controller.pcf 
+xst -intstyle ise -ifn "C:/Users/saidwivedi/OneDrive/Project/NIT/ANN_Final/controller.xst" -ofn "C:/Users/saidwivedi/OneDrive/Project/NIT/ANN_Final/controller.syr" 
+xst -intstyle ise -ifn "C:/Users/saidwivedi/OneDrive/Project/NIT/ANN_Final/controller.xst" -ofn "C:/Users/saidwivedi/OneDrive/Project/NIT/ANN_Final/controller.syr" 
+xst -intstyle ise -ifn "C:/Users/saidwivedi/OneDrive/Project/NIT/ANN_Final/controller.xst" -ofn "C:/Users/saidwivedi/OneDrive/Project/NIT/ANN_Final/controller.syr" 
+xst -intstyle ise -ifn "C:/Users/saidwivedi/OneDrive/Project/NIT/ANN_Final/controller.xst" -ofn "C:/Users/saidwivedi/OneDrive/Project/NIT/ANN_Final/controller.syr" 
+xst -intstyle ise -ifn "C:/Users/saidwivedi/OneDrive/Project/NIT/ANN_Final/controller.xst" -ofn "C:/Users/saidwivedi/OneDrive/Project/NIT/ANN_Final/controller.syr" 
+xst -intstyle ise -ifn "C:/Users/saidwivedi/OneDrive/Project/NIT/ANN_Final/controller.xst" -ofn "C:/Users/saidwivedi/OneDrive/Project/NIT/ANN_Final/controller.syr" 
+xst -intstyle ise -ifn "C:/Users/saidwivedi/OneDrive/Project/NIT/ANN_Final/controller.xst" -ofn "C:/Users/saidwivedi/OneDrive/Project/NIT/ANN_Final/controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc7a100t-csg324-1 controller.ngc controller.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o controller_map.ncd controller.ngd controller.pcf 
+par -w -intstyle ise -ol high -mt off controller_map.ncd controller.ncd controller.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml controller.twx controller.ncd -o controller.twr controller.pcf 

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/saidwivedi/OneDrive/Project/NIT/ANN_Final/controller_tb_isim_beh.exe" -prj "C:/Users/saidwivedi/OneDrive/Project/NIT/ANN_Final/controller_tb_beh.prj" "work.controller_tb" 

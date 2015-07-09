@@ -1,0 +1,15 @@
+# Output products list for <acticv_mul>
+_xmsgs\pn_parser.xmsgs
+acticv_mul.asy
+acticv_mul.gise
+acticv_mul.ngc
+acticv_mul.sym
+acticv_mul.vhd
+acticv_mul.vho
+acticv_mul.xco
+acticv_mul.xise
+acticv_mul\doc\dsp48_macro_ds754.pdf
+acticv_mul\doc\xbip_dsp48_macro_v2_1_readme.txt
+acticv_mul\doc\xbip_dsp48_macro_v2_1_vinfo.html
+acticv_mul_flist.txt
+acticv_mul_xmdf.tcl

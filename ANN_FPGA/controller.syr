@@ -1,0 +1,778 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Reading design: controller.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "controller.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "controller"
+Output Format                      : NGC
+Target Device                      : xc7a100t-1-csg324
+
+---- Source Options
+Top Module Name                    : controller
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\saidwivedi\OneDrive\Project\NIT\ANN_Final\ipcore_dir\mul_hid.vhd" into library work
+Parsing entity <mul_hid>.
+Parsing architecture <mul_hid_a> of entity <mul_hid>.
+Parsing VHDL file "C:\Users\saidwivedi\OneDrive\Project\NIT\ANN_Final\ipcore_dir\acticv_mul.vhd" into library work
+Parsing entity <acticv_mul>.
+Parsing architecture <acticv_mul_a> of entity <acticv_mul>.
+Parsing VHDL file "C:\Users\saidwivedi\OneDrive\Project\NIT\ANN_Final\ipcore_dir\test_image.vhd" into library work
+Parsing entity <test_image>.
+Parsing architecture <test_image_a> of entity <test_image>.
+Parsing VHDL file "C:\Users\saidwivedi\OneDrive\Project\NIT\ANN_Final\ipcore_dir\weight_hid.vhd" into library work
+Parsing entity <weight_hid>.
+Parsing architecture <weight_hid_a> of entity <weight_hid>.
+Parsing VHDL file "C:\Users\saidwivedi\OneDrive\Project\NIT\ANN_Final\ipcore_dir\weight_out.vhd" into library work
+Parsing entity <weight_out>.
+Parsing architecture <weight_out_a> of entity <weight_out>.
+Parsing VHDL file "C:\Users\saidwivedi\OneDrive\Project\NIT\ANN_Final\shifter.vhd" into library work
+Parsing entity <shifter>.
+Parsing architecture <Behavioral> of entity <shifter>.
+Parsing VHDL file "C:\Users\saidwivedi\OneDrive\Project\NIT\ANN_Final\neuron_hid.vhd" into library work
+Parsing entity <neuron_hid>.
+Parsing architecture <Behavioral> of entity <neuron_hid>.
+Parsing VHDL file "C:\Users\saidwivedi\OneDrive\Project\NIT\ANN_Final\custom_pkg.vhd" into library work
+Parsing package <custom_pkg>.
+Parsing package body <custom_pkg>.
+Parsing VHDL file "C:\Users\saidwivedi\OneDrive\Project\NIT\ANN_Final\activation_hid_count.vhd" into library work
+Parsing entity <activation_hid_count>.
+Parsing architecture <Behavioral> of entity <activation_hid_count>.
+Parsing VHDL file "C:\Users\saidwivedi\OneDrive\Project\NIT\ANN_Final\prediction.vhd" into library work
+Parsing entity <prediction>.
+Parsing architecture <Behavioral> of entity <prediction>.
+Parsing VHDL file "C:\Users\saidwivedi\OneDrive\Project\NIT\ANN_Final\hidden_layer.vhd" into library work
+Parsing entity <hidden_layer>.
+Parsing architecture <Behavioral> of entity <hidden_layer>.
+Parsing VHDL file "C:\Users\saidwivedi\OneDrive\Project\NIT\ANN_Final\controller.vhd" into library work
+Parsing entity <controller>.
+Parsing architecture <Behavioral> of entity <controller>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <controller> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <test_image> (architecture <test_image_a>) from library <work>.
+
+Elaborating entity <hidden_layer> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <neuron_hid> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <mul_hid> (architecture <mul_hid_a>) from library <work>.
+
+Elaborating entity <activation_hid_count> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <shifter> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <acticv_mul> (architecture <acticv_mul_a>) from library <work>.
+
+Elaborating entity <weight_hid> (architecture <weight_hid_a>) from library <work>.
+
+Elaborating entity <weight_out> (architecture <weight_out_a>) from library <work>.
+
+Elaborating entity <prediction> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <controller>.
+    Related source file is "C:\Users\saidwivedi\OneDrive\Project\NIT\ANN_Final\controller.vhd".
+    Found 8-bit register for signal <addra_image>.
+    Found 8-bit register for signal <addr_weight_hid>.
+    Found 8-bit register for signal <layer_output<40>>.
+    Found 8-bit register for signal <layer_output<39>>.
+    Found 8-bit register for signal <layer_output<38>>.
+    Found 8-bit register for signal <layer_output<37>>.
+    Found 8-bit register for signal <layer_output<36>>.
+    Found 8-bit register for signal <layer_output<35>>.
+    Found 8-bit register for signal <layer_output<34>>.
+    Found 8-bit register for signal <layer_output<33>>.
+    Found 8-bit register for signal <layer_output<32>>.
+    Found 8-bit register for signal <layer_output<31>>.
+    Found 8-bit register for signal <layer_output<30>>.
+    Found 8-bit register for signal <layer_output<29>>.
+    Found 8-bit register for signal <layer_output<28>>.
+    Found 8-bit register for signal <layer_output<27>>.
+    Found 8-bit register for signal <layer_output<26>>.
+    Found 8-bit register for signal <layer_output<25>>.
+    Found 8-bit register for signal <layer_output<24>>.
+    Found 8-bit register for signal <layer_output<23>>.
+    Found 8-bit register for signal <layer_output<22>>.
+    Found 8-bit register for signal <layer_output<21>>.
+    Found 8-bit register for signal <layer_output<20>>.
+    Found 8-bit register for signal <layer_output<19>>.
+    Found 8-bit register for signal <layer_output<18>>.
+    Found 8-bit register for signal <layer_output<17>>.
+    Found 8-bit register for signal <layer_output<16>>.
+    Found 8-bit register for signal <layer_output<15>>.
+    Found 8-bit register for signal <layer_output<14>>.
+    Found 8-bit register for signal <layer_output<13>>.
+    Found 8-bit register for signal <layer_output<12>>.
+    Found 8-bit register for signal <layer_output<11>>.
+    Found 8-bit register for signal <layer_output<10>>.
+    Found 8-bit register for signal <layer_output<9>>.
+    Found 8-bit register for signal <layer_output<8>>.
+    Found 8-bit register for signal <layer_output<7>>.
+    Found 8-bit register for signal <layer_output<6>>.
+    Found 8-bit register for signal <layer_output<5>>.
+    Found 8-bit register for signal <layer_output<4>>.
+    Found 8-bit register for signal <layer_output<3>>.
+    Found 8-bit register for signal <layer_output<2>>.
+    Found 8-bit register for signal <layer_output<1>>.
+    Found 8-bit register for signal <layer_output<0>>.
+    Found 8-bit register for signal <output_temp>.
+    Found 6-bit register for signal <addr_weight_out>.
+    Found 32-bit register for signal <transition.num>.
+    Found 3-bit register for signal <curr_state>.
+    Found finite state machine <FSM_0> for signal <curr_state>.
+    -----------------------------------------------------------------------
+    | States             | 7                                              |
+    | Transitions        | 13                                             |
+    | Inputs             | 2                                              |
+    | Outputs            | 13                                             |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | reset (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit adder for signal <addra_image[7]_GND_7_o_add_2_OUT> created at line 128.
+    Found 8-bit adder for signal <addr_weight_hid[7]_GND_7_o_add_3_OUT> created at line 129.
+    Found 32-bit adder for signal <transition.num[31]_GND_7_o_add_7_OUT> created at line 137.
+    Found 6-bit adder for signal <addr_weight_out[5]_GND_7_o_add_9_OUT> created at line 141.
+    Found 8-bit 41-to-1 multiplexer for signal <transition.num[5]_X_7_o_wide_mux_5_OUT> created at line 135.
+    Found 8-bit 4-to-1 multiplexer for signal <_n1441> created at line 19.
+    Found 8-bit 4-to-1 multiplexer for signal <_n1443> created at line 24.
+    Found 8-bit 4-to-1 multiplexer for signal <_n1445> created at line 24.
+    Found 8-bit 4-to-1 multiplexer for signal <_n1447> created at line 24.
+    Found 8-bit 4-to-1 multiplexer for signal <_n1449> created at line 24.
+    Found 8-bit 4-to-1 multiplexer for signal <_n1451> created at line 24.
+    Found 8-bit 4-to-1 multiplexer for signal <_n1453> created at line 24.
+    Found 8-bit 4-to-1 multiplexer for signal <_n1455> created at line 24.
+    Found 8-bit 4-to-1 multiplexer for signal <_n1457> created at line 24.
+    Found 8-bit 4-to-1 multiplexer for signal <_n1459> created at line 24.
+    Found 8-bit 4-to-1 multiplexer for signal <_n1461> created at line 24.
+    Found 8-bit 4-to-1 multiplexer for signal <_n1463> created at line 24.
+    Found 8-bit 4-to-1 multiplexer for signal <_n1465> created at line 24.
+    Found 8-bit 4-to-1 multiplexer for signal <_n1467> created at line 24.
+    Found 8-bit 4-to-1 multiplexer for signal <_n1469> created at line 24.
+    Found 8-bit 4-to-1 multiplexer for signal <_n1471> created at line 24.
+    Found 8-bit 4-to-1 multiplexer for signal <_n1473> created at line 24.
+    Found 8-bit 4-to-1 multiplexer for signal <_n1475> created at line 24.
+    Found 8-bit 4-to-1 multiplexer for signal <_n1477> created at line 24.
+    Found 8-bit 4-to-1 multiplexer for signal <_n1479> created at line 24.
+    Found 8-bit 4-to-1 multiplexer for signal <_n1481> created at line 24.
+    Found 8-bit 4-to-1 multiplexer for signal <_n1483> created at line 24.
+    Found 8-bit 4-to-1 multiplexer for signal <_n1485> created at line 24.
+    Found 8-bit 4-to-1 multiplexer for signal <_n1487> created at line 24.
+    Found 8-bit 4-to-1 multiplexer for signal <_n1489> created at line 24.
+    Found 8-bit 4-to-1 multiplexer for signal <_n1491> created at line 24.
+    Found 8-bit 4-to-1 multiplexer for signal <_n1493> created at line 24.
+    Found 8-bit 4-to-1 multiplexer for signal <_n1495> created at line 24.
+    Found 8-bit 4-to-1 multiplexer for signal <_n1497> created at line 24.
+    Found 8-bit 4-to-1 multiplexer for signal <_n1499> created at line 24.
+    Found 8-bit 4-to-1 multiplexer for signal <_n1501> created at line 24.
+    Found 8-bit 4-to-1 multiplexer for signal <_n1503> created at line 24.
+    Found 8-bit 4-to-1 multiplexer for signal <_n1505> created at line 24.
+    Found 8-bit 4-to-1 multiplexer for signal <_n1507> created at line 24.
+    Found 8-bit 4-to-1 multiplexer for signal <_n1509> created at line 24.
+    Found 8-bit 4-to-1 multiplexer for signal <_n1511> created at line 24.
+    Found 8-bit 4-to-1 multiplexer for signal <_n1513> created at line 24.
+    Found 8-bit 4-to-1 multiplexer for signal <_n1515> created at line 24.
+    Found 8-bit 4-to-1 multiplexer for signal <_n1517> created at line 24.
+    Found 8-bit 4-to-1 multiplexer for signal <_n1519> created at line 24.
+    Found 8-bit 4-to-1 multiplexer for signal <_n1521> created at line 24.
+    Found 32-bit comparator greater for signal <GND_7_o_transition.num[31]_LessThan_7_o> created at line 136
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred 382 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred  47 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <controller> synthesized.
+
+Synthesizing Unit <hidden_layer>.
+    Related source file is "C:\Users\saidwivedi\OneDrive\Project\NIT\ANN_Final\hidden_layer.vhd".
+        N = 40
+INFO:Xst:3210 - "C:\Users\saidwivedi\OneDrive\Project\NIT\ANN_Final\hidden_layer.vhd" line 82: Output port <shift_over_flag> of the instance <shift_map[39].shifter_map> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\saidwivedi\OneDrive\Project\NIT\ANN_Final\hidden_layer.vhd" line 82: Output port <shift_over_flag> of the instance <shift_map[38].shifter_map> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\saidwivedi\OneDrive\Project\NIT\ANN_Final\hidden_layer.vhd" line 82: Output port <shift_over_flag> of the instance <shift_map[37].shifter_map> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\saidwivedi\OneDrive\Project\NIT\ANN_Final\hidden_layer.vhd" line 82: Output port <shift_over_flag> of the instance <shift_map[36].shifter_map> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\saidwivedi\OneDrive\Project\NIT\ANN_Final\hidden_layer.vhd" line 82: Output port <shift_over_flag> of the instance <shift_map[35].shifter_map> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\saidwivedi\OneDrive\Project\NIT\ANN_Final\hidden_layer.vhd" line 82: Output port <shift_over_flag> of the instance <shift_map[34].shifter_map> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\saidwivedi\OneDrive\Project\NIT\ANN_Final\hidden_layer.vhd" line 82: Output port <shift_over_flag> of the instance <shift_map[33].shifter_map> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\saidwivedi\OneDrive\Project\NIT\ANN_Final\hidden_layer.vhd" line 82: Output port <shift_over_flag> of the instance <shift_map[32].shifter_map> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\saidwivedi\OneDrive\Project\NIT\ANN_Final\hidden_layer.vhd" line 82: Output port <shift_over_flag> of the instance <shift_map[31].shifter_map> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\saidwivedi\OneDrive\Project\NIT\ANN_Final\hidden_layer.vhd" line 82: Output port <shift_over_flag> of the instance <shift_map[30].shifter_map> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\saidwivedi\OneDrive\Project\NIT\ANN_Final\hidden_layer.vhd" line 82: Output port <shift_over_flag> of the instance <shift_map[29].shifter_map> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\saidwivedi\OneDrive\Project\NIT\ANN_Final\hidden_layer.vhd" line 82: Output port <shift_over_flag> of the instance <shift_map[28].shifter_map> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\saidwivedi\OneDrive\Project\NIT\ANN_Final\hidden_layer.vhd" line 82: Output port <shift_over_flag> of the instance <shift_map[27].shifter_map> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\saidwivedi\OneDrive\Project\NIT\ANN_Final\hidden_layer.vhd" line 82: Output port <shift_over_flag> of the instance <shift_map[26].shifter_map> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\saidwivedi\OneDrive\Project\NIT\ANN_Final\hidden_layer.vhd" line 82: Output port <shift_over_flag> of the instance <shift_map[25].shifter_map> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\saidwivedi\OneDrive\Project\NIT\ANN_Final\hidden_layer.vhd" line 82: Output port <shift_over_flag> of the instance <shift_map[24].shifter_map> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\saidwivedi\OneDrive\Project\NIT\ANN_Final\hidden_layer.vhd" line 82: Output port <shift_over_flag> of the instance <shift_map[23].shifter_map> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\saidwivedi\OneDrive\Project\NIT\ANN_Final\hidden_layer.vhd" line 82: Output port <shift_over_flag> of the instance <shift_map[22].shifter_map> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\saidwivedi\OneDrive\Project\NIT\ANN_Final\hidden_layer.vhd" line 82: Output port <shift_over_flag> of the instance <shift_map[21].shifter_map> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\saidwivedi\OneDrive\Project\NIT\ANN_Final\hidden_layer.vhd" line 82: Output port <shift_over_flag> of the instance <shift_map[20].shifter_map> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\saidwivedi\OneDrive\Project\NIT\ANN_Final\hidden_layer.vhd" line 82: Output port <shift_over_flag> of the instance <shift_map[19].shifter_map> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\saidwivedi\OneDrive\Project\NIT\ANN_Final\hidden_layer.vhd" line 82: Output port <shift_over_flag> of the instance <shift_map[18].shifter_map> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\saidwivedi\OneDrive\Project\NIT\ANN_Final\hidden_layer.vhd" line 82: Output port <shift_over_flag> of the instance <shift_map[17].shifter_map> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\saidwivedi\OneDrive\Project\NIT\ANN_Final\hidden_layer.vhd" line 82: Output port <shift_over_flag> of the instance <shift_map[16].shifter_map> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\saidwivedi\OneDrive\Project\NIT\ANN_Final\hidden_layer.vhd" line 82: Output port <shift_over_flag> of the instance <shift_map[15].shifter_map> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\saidwivedi\OneDrive\Project\NIT\ANN_Final\hidden_layer.vhd" line 82: Output port <shift_over_flag> of the instance <shift_map[14].shifter_map> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\saidwivedi\OneDrive\Project\NIT\ANN_Final\hidden_layer.vhd" line 82: Output port <shift_over_flag> of the instance <shift_map[13].shifter_map> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\saidwivedi\OneDrive\Project\NIT\ANN_Final\hidden_layer.vhd" line 82: Output port <shift_over_flag> of the instance <shift_map[12].shifter_map> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\saidwivedi\OneDrive\Project\NIT\ANN_Final\hidden_layer.vhd" line 82: Output port <shift_over_flag> of the instance <shift_map[11].shifter_map> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\saidwivedi\OneDrive\Project\NIT\ANN_Final\hidden_layer.vhd" line 82: Output port <shift_over_flag> of the instance <shift_map[10].shifter_map> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\saidwivedi\OneDrive\Project\NIT\ANN_Final\hidden_layer.vhd" line 82: Output port <shift_over_flag> of the instance <shift_map[9].shifter_map> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\saidwivedi\OneDrive\Project\NIT\ANN_Final\hidden_layer.vhd" line 82: Output port <shift_over_flag> of the instance <shift_map[8].shifter_map> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\saidwivedi\OneDrive\Project\NIT\ANN_Final\hidden_layer.vhd" line 82: Output port <shift_over_flag> of the instance <shift_map[7].shifter_map> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\saidwivedi\OneDrive\Project\NIT\ANN_Final\hidden_layer.vhd" line 82: Output port <shift_over_flag> of the instance <shift_map[6].shifter_map> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\saidwivedi\OneDrive\Project\NIT\ANN_Final\hidden_layer.vhd" line 82: Output port <shift_over_flag> of the instance <shift_map[5].shifter_map> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\saidwivedi\OneDrive\Project\NIT\ANN_Final\hidden_layer.vhd" line 82: Output port <shift_over_flag> of the instance <shift_map[4].shifter_map> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\saidwivedi\OneDrive\Project\NIT\ANN_Final\hidden_layer.vhd" line 82: Output port <shift_over_flag> of the instance <shift_map[3].shifter_map> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\saidwivedi\OneDrive\Project\NIT\ANN_Final\hidden_layer.vhd" line 82: Output port <shift_over_flag> of the instance <shift_map[2].shifter_map> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\saidwivedi\OneDrive\Project\NIT\ANN_Final\hidden_layer.vhd" line 82: Output port <shift_over_flag> of the instance <shift_map[1].shifter_map> is unconnected or connected to loadless signal.
+    Summary:
+	inferred   3 Multiplexer(s).
+Unit <hidden_layer> synthesized.
+
+Synthesizing Unit <neuron_hid>.
+    Related source file is "C:\Users\saidwivedi\OneDrive\Project\NIT\ANN_Final\neuron_hid.vhd".
+    Summary:
+	no macro.
+Unit <neuron_hid> synthesized.
+
+Synthesizing Unit <activation_hid_count>.
+    Related source file is "C:\Users\saidwivedi\OneDrive\Project\NIT\ANN_Final\activation_hid_count.vhd".
+    Found 8-bit register for signal <count>.
+    Found 8-bit adder for signal <num_operations[7]_GND_13_o_add_0_OUT> created at line 25.
+    Found 8-bit adder for signal <count[7]_GND_13_o_add_2_OUT> created at line 30.
+    Found 8-bit comparator equal for signal <count[7]_num_operations[7]_equal_2_o> created at line 25
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred   8 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <activation_hid_count> synthesized.
+
+Synthesizing Unit <shifter>.
+    Related source file is "C:\Users\saidwivedi\OneDrive\Project\NIT\ANN_Final\shifter.vhd".
+    Found 1-bit register for signal <shift_over_flag>.
+    Found 1-bit register for signal <acticv_mul_en>.
+    Found 16-bit register for signal <shifter.temp_reg>.
+    Found 16-bit register for signal <input_temp>.
+    Found 16-bit register for signal <shifted_output_temp>.
+    Found 32-bit register for signal <shifter.shift_counter>.
+    Found 32-bit adder for signal <shifter.shift_counter[31]_GND_14_o_add_8_OUT> created at line 75.
+    Found 32-bit comparator greater for signal <shifter.shift_counter[31]_GND_14_o_LessThan_2_o> created at line 59
+    Found 32-bit comparator lessequal for signal <shifter.shift_counter[31]_GND_14_o_LessThan_3_o> created at line 62
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  82 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   4 Multiplexer(s).
+Unit <shifter> synthesized.
+
+Synthesizing Unit <prediction>.
+    Related source file is "C:\Users\saidwivedi\OneDrive\Project\NIT\ANN_Final\prediction.vhd".
+    Found 32-bit register for signal <count>.
+    Found 8-bit register for signal <biggest>.
+    Found 32-bit adder for signal <count[31]_GND_35_o_add_5_OUT> created at line 34.
+    Found 8-bit 40-to-1 multiplexer for signal <count[5]_X_17_o_wide_mux_3_OUT> created at line 32.
+    Found 32-bit comparator greater for signal <GND_35_o_count[31]_LessThan_1_o> created at line 30
+    Found 8-bit comparator lessequal for signal <count[5]_biggest[7]_LessThan_3_o> created at line 31
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  40 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <prediction> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 47
+ 32-bit adder                                          : 42
+ 6-bit adder                                           : 1
+ 8-bit adder                                           : 4
+# Registers                                            : 288
+ 1-bit register                                        : 80
+ 16-bit register                                       : 120
+ 32-bit register                                       : 42
+ 6-bit register                                        : 1
+ 8-bit register                                        : 45
+# Comparators                                          : 84
+ 32-bit comparator greater                             : 42
+ 32-bit comparator lessequal                           : 40
+ 8-bit comparator equal                                : 1
+ 8-bit comparator lessequal                            : 1
+# Multiplexers                                         : 212
+ 1-bit 2-to-1 multiplexer                              : 84
+ 16-bit 2-to-1 multiplexer                             : 80
+ 32-bit 2-to-1 multiplexer                             : 1
+ 6-bit 2-to-1 multiplexer                              : 2
+ 8-bit 2-to-1 multiplexer                              : 2
+ 8-bit 4-to-1 multiplexer                              : 41
+ 8-bit 40-to-1 multiplexer                             : 1
+ 8-bit 41-to-1 multiplexer                             : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/test_image.ngc>.
+Reading core <ipcore_dir/weight_hid.ngc>.
+Reading core <ipcore_dir/weight_out.ngc>.
+Reading core <ipcore_dir/mul_hid.ngc>.
+Reading Secure Unit <blk00000001>.
+Reading core <ipcore_dir/acticv_mul.ngc>.
+Reading Secure Unit <blk00000001>.
+Loading core <test_image> for timing and area information for instance <test_image_map>.
+Loading core <weight_hid> for timing and area information for instance <weight_hid_map>.
+Loading core <weight_out> for timing and area information for instance <weight_out_map>.
+Loading core <mul_hid> for timing and area information for instance <mul_hid_map>.
+Loading core <acticv_mul> for timing and area information for instance <acticv_mul_map>.
+INFO:Xst:1901 - Instance blk00000004 in unit blk00000004 of type DSP48E has been replaced by DSP48E1
+
+Synthesizing (advanced) Unit <activation_hid_count>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <activation_hid_count> synthesized (advanced).
+
+Synthesizing (advanced) Unit <controller>.
+The following registers are absorbed into counter <addra_image>: 1 register on signal <addra_image>.
+The following registers are absorbed into counter <addr_weight_hid>: 1 register on signal <addr_weight_hid>.
+Unit <controller> synthesized (advanced).
+
+Synthesizing (advanced) Unit <shifter>.
+The following registers are absorbed into counter <shifter.shift_counter>: 1 register on signal <shifter.shift_counter>.
+Unit <shifter> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 4
+ 32-bit adder                                          : 2
+ 6-bit adder                                           : 1
+ 8-bit adder                                           : 1
+# Counters                                             : 43
+ 32-bit up counter                                     : 40
+ 8-bit up counter                                      : 3
+# Registers                                            : 2406
+ Flip-Flops                                            : 2406
+# Comparators                                          : 84
+ 32-bit comparator greater                             : 42
+ 32-bit comparator lessequal                           : 40
+ 8-bit comparator equal                                : 1
+ 8-bit comparator lessequal                            : 1
+# Multiplexers                                         : 809
+ 1-bit 2-to-1 multiplexer                              : 723
+ 16-bit 2-to-1 multiplexer                             : 40
+ 32-bit 2-to-1 multiplexer                             : 1
+ 6-bit 2-to-1 multiplexer                              : 2
+ 8-bit 4-to-1 multiplexer                              : 41
+ 8-bit 40-to-1 multiplexer                             : 1
+ 8-bit 41-to-1 multiplexer                             : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <curr_state[1:3]> with gray encoding.
+---------------------------------
+ State               | Encoding
+---------------------------------
+ idle                | 000
+ weighted_sum_layer1 | 001
+ weighted_sum_layer2 | 010
+ activate_layer1     | 011
+ activate_layer2     | 110
+ reset_layer         | 111
+ predict_layer       | 101
+---------------------------------
+INFO:Xst:2146 - In block <controller>, Counter <addr_weight_hid> <addra_image> are equivalent, XST will keep only <addr_weight_hid>.
+
+Optimizing unit <controller> ...
+
+Optimizing unit <hidden_layer> ...
+
+Optimizing unit <shifter> ...
+
+Optimizing unit <prediction> ...
+WARNING:Xst:2677 - Node <layer_map/shift_map[1].shifter_map/shift_over_flag> of sequential type is unconnected in block <controller>.
+WARNING:Xst:2677 - Node <layer_map/shift_map[2].shifter_map/shift_over_flag> of sequential type is unconnected in block <controller>.
+WARNING:Xst:2677 - Node <layer_map/shift_map[3].shifter_map/shift_over_flag> of sequential type is unconnected in block <controller>.
+WARNING:Xst:2677 - Node <layer_map/shift_map[4].shifter_map/shift_over_flag> of sequential type is unconnected in block <controller>.
+WARNING:Xst:2677 - Node <layer_map/shift_map[5].shifter_map/shift_over_flag> of sequential type is unconnected in block <controller>.
+WARNING:Xst:2677 - Node <layer_map/shift_map[6].shifter_map/shift_over_flag> of sequential type is unconnected in block <controller>.
+WARNING:Xst:2677 - Node <layer_map/shift_map[7].shifter_map/shift_over_flag> of sequential type is unconnected in block <controller>.
+WARNING:Xst:2677 - Node <layer_map/shift_map[8].shifter_map/shift_over_flag> of sequential type is unconnected in block <controller>.
+WARNING:Xst:2677 - Node <layer_map/shift_map[9].shifter_map/shift_over_flag> of sequential type is unconnected in block <controller>.
+WARNING:Xst:2677 - Node <layer_map/shift_map[10].shifter_map/shift_over_flag> of sequential type is unconnected in block <controller>.
+WARNING:Xst:2677 - Node <layer_map/shift_map[11].shifter_map/shift_over_flag> of sequential type is unconnected in block <controller>.
+WARNING:Xst:2677 - Node <layer_map/shift_map[12].shifter_map/shift_over_flag> of sequential type is unconnected in block <controller>.
+WARNING:Xst:2677 - Node <layer_map/shift_map[13].shifter_map/shift_over_flag> of sequential type is unconnected in block <controller>.
+WARNING:Xst:2677 - Node <layer_map/shift_map[14].shifter_map/shift_over_flag> of sequential type is unconnected in block <controller>.
+WARNING:Xst:2677 - Node <layer_map/shift_map[15].shifter_map/shift_over_flag> of sequential type is unconnected in block <controller>.
+WARNING:Xst:2677 - Node <layer_map/shift_map[16].shifter_map/shift_over_flag> of sequential type is unconnected in block <controller>.
+WARNING:Xst:2677 - Node <layer_map/shift_map[17].shifter_map/shift_over_flag> of sequential type is unconnected in block <controller>.
+WARNING:Xst:2677 - Node <layer_map/shift_map[18].shifter_map/shift_over_flag> of sequential type is unconnected in block <controller>.
+WARNING:Xst:2677 - Node <layer_map/shift_map[19].shifter_map/shift_over_flag> of sequential type is unconnected in block <controller>.
+WARNING:Xst:2677 - Node <layer_map/shift_map[20].shifter_map/shift_over_flag> of sequential type is unconnected in block <controller>.
+WARNING:Xst:2677 - Node <layer_map/shift_map[21].shifter_map/shift_over_flag> of sequential type is unconnected in block <controller>.
+WARNING:Xst:2677 - Node <layer_map/shift_map[22].shifter_map/shift_over_flag> of sequential type is unconnected in block <controller>.
+WARNING:Xst:2677 - Node <layer_map/shift_map[23].shifter_map/shift_over_flag> of sequential type is unconnected in block <controller>.
+WARNING:Xst:2677 - Node <layer_map/shift_map[24].shifter_map/shift_over_flag> of sequential type is unconnected in block <controller>.
+WARNING:Xst:2677 - Node <layer_map/shift_map[25].shifter_map/shift_over_flag> of sequential type is unconnected in block <controller>.
+WARNING:Xst:2677 - Node <layer_map/shift_map[26].shifter_map/shift_over_flag> of sequential type is unconnected in block <controller>.
+WARNING:Xst:2677 - Node <layer_map/shift_map[27].shifter_map/shift_over_flag> of sequential type is unconnected in block <controller>.
+WARNING:Xst:2677 - Node <layer_map/shift_map[28].shifter_map/shift_over_flag> of sequential type is unconnected in block <controller>.
+WARNING:Xst:2677 - Node <layer_map/shift_map[29].shifter_map/shift_over_flag> of sequential type is unconnected in block <controller>.
+WARNING:Xst:2677 - Node <layer_map/shift_map[30].shifter_map/shift_over_flag> of sequential type is unconnected in block <controller>.
+WARNING:Xst:2677 - Node <layer_map/shift_map[31].shifter_map/shift_over_flag> of sequential type is unconnected in block <controller>.
+WARNING:Xst:2677 - Node <layer_map/shift_map[32].shifter_map/shift_over_flag> of sequential type is unconnected in block <controller>.
+WARNING:Xst:2677 - Node <layer_map/shift_map[33].shifter_map/shift_over_flag> of sequential type is unconnected in block <controller>.
+WARNING:Xst:2677 - Node <layer_map/shift_map[34].shifter_map/shift_over_flag> of sequential type is unconnected in block <controller>.
+WARNING:Xst:2677 - Node <layer_map/shift_map[35].shifter_map/shift_over_flag> of sequential type is unconnected in block <controller>.
+WARNING:Xst:2677 - Node <layer_map/shift_map[36].shifter_map/shift_over_flag> of sequential type is unconnected in block <controller>.
+WARNING:Xst:2677 - Node <layer_map/shift_map[37].shifter_map/shift_over_flag> of sequential type is unconnected in block <controller>.
+WARNING:Xst:2677 - Node <layer_map/shift_map[38].shifter_map/shift_over_flag> of sequential type is unconnected in block <controller>.
+WARNING:Xst:2677 - Node <layer_map/shift_map[39].shifter_map/shift_over_flag> of sequential type is unconnected in block <controller>.
+WARNING:Xst:1710 - FF/Latch <prediction_map/biggest_7> (without init value) has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block controller, actual ratio is 9.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 3665
+ Flip-Flops                                            : 3665
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : controller.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 7065
+#      GND                         : 124
+#      INV                         : 43
+#      LUT1                        : 1309
+#      LUT2                        : 124
+#      LUT3                        : 134
+#      LUT4                        : 654
+#      LUT5                        : 849
+#      LUT6                        : 465
+#      MUXCY                       : 1886
+#      MUXF7                       : 25
+#      MUXF8                       : 8
+#      VCC                         : 84
+#      XORCY                       : 1360
+# FlipFlops/Latches                : 3665
+#      FDC                         : 1978
+#      FDCE                        : 1687
+# RAMS                             : 11
+#      RAMB18E1                    : 3
+#      RAMB36E1                    : 8
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 9
+#      IBUF                        : 1
+#      OBUF                        : 8
+# DSPs                             : 80
+#      DSP48E1                     : 80
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            3665  out of  126800     2%  
+ Number of Slice LUTs:                 3578  out of  63400     5%  
+    Number used as Logic:              3578  out of  63400     5%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   5055
+   Number with an unused Flip Flop:    1390  out of   5055    27%  
+   Number with an unused LUT:          1477  out of   5055    29%  
+   Number of fully used LUT-FF pairs:  2188  out of   5055    43%  
+   Number of unique control sets:        87
+
+IO Utilization: 
+ Number of IOs:                          10
+ Number of bonded IOBs:                  10  out of    210     4%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:               10  out of    135     7%  
+    Number using Block RAM only:         10
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+ Number of DSP48E1s:                     80  out of    240    33%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 3756  |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+Control Signal                             | Buffer(FF name)                                                                                                                                   | Load  |
+-------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+weight_hid_map/N1(weight_hid_map/XST_GND:G)| NONE(weight_hid_map/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SP.WIDE_PRIM36.ram)| 8     |
+weight_out_map/N1(weight_out_map/XST_GND:G)| NONE(weight_out_map/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SP.WIDE_PRIM36.ram)| 8     |
+-------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 7.393ns (Maximum Frequency: 135.256MHz)
+   Minimum input arrival time before clock: 1.122ns
+   Maximum output required time after clock: 0.883ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 7.393ns (frequency: 135.256MHz)
+  Total number of paths / destination ports: 198115 / 12404
+-------------------------------------------------------------------------
+Delay:               7.393ns (Levels of Logic = 3)
+  Source:            test_image_map/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.WIDE_PRIM18.ram (RAM)
+  Destination:       sec_inst (DSP)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: test_image_map/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.WIDE_PRIM18.ram to sec_inst
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB18E1:CLKARDCLK->DOBDO9    1   2.454   0.421  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.WIDE_PRIM18.ram (douta<7>)
+     end scope: 'test_image_map:douta<7>'
+     LUT5:I4->O          920   0.124   0.672  input<7>1 (input<7>)
+     begin scope: 'layer_map/neuron_map[39].neurons/mul_hid_map:a<7>'
+     begin scope: 'layer_map/neuron_map[39].neurons/mul_hid_map/blk00000001:A<7>'
+     SEC:in                    3.722          sec_inst
+    ----------------------------------------
+    Total                      7.393ns (6.300ns logic, 1.093ns route)
+                                       (85.2% logic, 14.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 377 / 377
+-------------------------------------------------------------------------
+Offset:              1.122ns (Levels of Logic = 1)
+  Source:            reset (PAD)
+  Destination:       layer_output_40_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: reset to layer_output_40_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           377   0.001   0.627  reset_IBUF (reset_IBUF)
+     FDCE:CLR                  0.494          layer_output_40_0
+    ----------------------------------------
+    Total                      1.122ns (0.495ns logic, 0.627ns route)
+                                       (44.1% logic, 55.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 7 / 7
+-------------------------------------------------------------------------
+Offset:              0.883ns (Levels of Logic = 1)
+  Source:            prediction_map/biggest_6 (FF)
+  Destination:       output<6> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: prediction_map/biggest_6 to output<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.478   0.405  prediction_map/biggest_6 (prediction_map/biggest_6)
+     OBUF:I->O                 0.000          output_6_OBUF (output<6>)
+    ----------------------------------------
+    Total                      0.883ns (0.478ns logic, 0.405ns route)
+                                       (54.1% logic, 45.9% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    7.393|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 30.00 secs
+Total CPU time to Xst completion: 30.33 secs
+ 
+--> 
+
+Total memory usage is 415512 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   40 (   0 filtered)
+Number of infos    :   41 (   0 filtered)
+

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/sai/OneDrive/Project/Code/ANN_proto_final/controller_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="bip_dsp48_macro_pkg_v2_1" />
+            <top_module name="bip_usecase_utils_pkg_v2_0" />
+            <top_module name="bip_utils_pkg_v2_0" />
+            <top_module name="controller_tb" />
+            <top_module name="custom_pkg" />
+            <top_module name="mult_gen_pkg_v11_0" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_signed" />
+            <top_module name="std_logic_textio" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="textio" />
+            <top_module name="xbip_accum_v2_0_pkg" />
+            <top_module name="xbip_multaccum_pkg_v2_0" />
+            <top_module name="xbip_pipe_v2_0_comp" />
+            <top_module name="xbip_pipe_v2_0_xst_comp" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="23" />
+   <wvobject fp_name="/controller_tb/uut/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controller_tb/uut/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controller_tb/uut/num_neurons" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">num_neurons[7:0]</obj_property>
+      <obj_property name="ObjectShortName">num_neurons[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controller_tb/uut/image" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">image[7:0]</obj_property>
+      <obj_property name="ObjectShortName">image[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controller_tb/uut/out_weight_hid" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out_weight_hid[23:0]</obj_property>
+      <obj_property name="ObjectShortName">out_weight_hid[23:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controller_tb/uut/input" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">input[7:0]</obj_property>
+      <obj_property name="ObjectShortName">input[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controller_tb/uut/weight" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">weight[2:0]</obj_property>
+      <obj_property name="ObjectShortName">weight[2:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controller_tb/uut/layer_map/activ_output" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">activ_output[2:0]</obj_property>
+      <obj_property name="ObjectShortName">activ_output[2:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controller_tb/uut/output_hid" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">output_hid[2:0]</obj_property>
+      <obj_property name="ObjectShortName">output_hid[2:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controller_tb/uut/addr_weight_hid" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr_weight_hid[2:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_weight_hid[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controller_tb/uut/addr_weight_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr_weight_out[2:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_weight_out[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controller_tb/uut/active_activation" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">active_activation</obj_property>
+      <obj_property name="ObjectShortName">active_activation</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controller_tb/uut/shift_over_flag" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">shift_over_flag</obj_property>
+      <obj_property name="ObjectShortName">shift_over_flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controller_tb/uut/layer" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">layer</obj_property>
+      <obj_property name="ObjectShortName">layer</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controller_tb/uut/out_weight_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out_weight_out[23:0]</obj_property>
+      <obj_property name="ObjectShortName">out_weight_out[23:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controller_tb/uut/output_temp" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">output_temp[7:0]</obj_property>
+      <obj_property name="ObjectShortName">output_temp[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controller_tb/uut/output" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">output[2:0]</obj_property>
+      <obj_property name="ObjectShortName">output[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controller_tb/uut/rst_layer" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst_layer</obj_property>
+      <obj_property name="ObjectShortName">rst_layer</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controller_tb/uut/curr_state" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">curr_state</obj_property>
+      <obj_property name="ObjectShortName">curr_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controller_tb/uut/next_state" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">next_state</obj_property>
+      <obj_property name="ObjectShortName">next_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controller_tb/uut/num_hidden_neurons" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">num_hidden_neurons</obj_property>
+      <obj_property name="ObjectShortName">num_hidden_neurons</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controller_tb/uut/out_weight_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out_weight_out[23:0]</obj_property>
+      <obj_property name="ObjectShortName">out_weight_out[23:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/controller_tb/uut/layer_map/weighted_sum" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">weighted_sum[2:0]</obj_property>
+      <obj_property name="ObjectShortName">weighted_sum[2:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,15 @@
+# Output products list for <activation_mul>
+_xmsgs\pn_parser.xmsgs
+activation_mul.asy
+activation_mul.gise
+activation_mul.ngc
+activation_mul.sym
+activation_mul.vhd
+activation_mul.vho
+activation_mul.xco
+activation_mul.xise
+activation_mul\doc\mult_gen_ds255.pdf
+activation_mul\doc\mult_gen_v11_2_readme.txt
+activation_mul\doc\mult_gen_v11_2_vinfo.html
+activation_mul_flist.txt
+activation_mul_xmdf.tcl

@@ -1,0 +1,17 @@
+# Output products list for <mul_hid>
+_xmsgs\pn_parser.xmsgs
+core_resources.txt
+gui_latency.txt
+mul_hid.asy
+mul_hid.gise
+mul_hid.ngc
+mul_hid.sym
+mul_hid.vhd
+mul_hid.vho
+mul_hid.xco
+mul_hid.xise
+mul_hid\doc\xbip_multaccum_ds716.pdf
+mul_hid\doc\xbip_multaccum_v2_0_readme.txt
+mul_hid\doc\xbip_multaccum_v2_0_vinfo.html
+mul_hid_flist.txt
+mul_hid_xmdf.tcl
